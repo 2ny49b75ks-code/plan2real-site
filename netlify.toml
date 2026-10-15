@@ -1,0 +1,35 @@
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Adresses courtes (App Store Connect : assistance et confidentialité)
+[[redirects]]
+  from = "/support"
+  to = "/fr/contact.html"
+  status = 301
+
+[[redirects]]
+  from = "/privacy"
+  to = "/en/privacy.html"
+  status = 301
+
+[[redirects]]
+  from = "/confidentialite"
+  to = "/fr/confidentialite.html"
+  status = 301
+
+[[redirects]]
+  from = "/en"
+  to = "/en/index.html"
+  status = 301
+
+[[redirects]]
+  from = "/fr"
+  to = "/fr/index.html"
+  status = 301
