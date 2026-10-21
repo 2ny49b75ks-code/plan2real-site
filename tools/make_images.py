@@ -50,8 +50,7 @@ def floor_plan():
         w(*seg)
     # Cloisons : salon | cuisine (x=16), chambre (y=14), salle de bain (x=24)
     w(16, 0, 16, 9); w(16, 12, 16, 24)          # ouverture salon-cuisine 9→12
-    w(0, 14, 9, 14); w(12, 14, 16, 14)          # porte chambre 9→12 (36 po)
-    w(16, 14, 22, 14); w(25, 14, 36, 14)        # porte salle de bain 22→25
+    w(0, 14, 36, 14)                            # portes : chambre 9→12, s.d.b. 19→22, rangement 27→30
     w(24, 14, 24, 24)
 
     # Ouvertures (portes) : effacer le mur puis dessiner le battant
@@ -66,10 +65,12 @@ def floor_plan():
             d.rectangle([X(cx) - wall, Y(cy), X(cx) + wall, Y(cy + 3)], fill=(250, 250, 246))
 
     door(9, 14, True, 1)
-    door(22, 14, True, 1)
-    d.rectangle([X(14) - wall, Y(24) - wall, X(17) + wall, Y(24) + wall], fill=(250, 250, 246))  # entrée
-    d.line([(X(14), Y(24)), (X(14), Y(21))], fill=(90, 90, 90), width=4)
-    d.arc([X(14) - 3 * ft, Y(24) - 3 * ft, X(14) + 3 * ft, Y(24) + 3 * ft], 270, 360, fill=(90, 90, 90), width=3)
+    door(19, 14, True, 1)
+    door(27, 14, True, 1)
+    # Entrée dans la cuisine, mur de droite de 10 à 13 pi : le battant s'ouvre vers l'intérieur.
+    d.rectangle([X(36) - wall, Y(10), X(36) + wall, Y(13)], fill=(250, 250, 246))
+    d.line([(X(36), Y(10)), (X(33), Y(10))], fill=(90, 90, 90), width=4)
+    d.arc([X(36) - 3 * ft, Y(10) - 3 * ft, X(36) + 3 * ft, Y(10) + 3 * ft], 90, 180, fill=(90, 90, 90), width=3)
     # Fenêtres
     for (a, b, c, e) in [(4, 0, 11, 0), (22, 0, 30, 0), (36, 4, 36, 9), (0, 17, 0, 21), (28, 24, 32, 24)]:
         d.line([(X(a), Y(b)), (X(c), Y(e))], fill=(250, 250, 246), width=wall - 4)
