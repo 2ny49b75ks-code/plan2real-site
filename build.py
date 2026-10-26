@@ -19,7 +19,7 @@ EFFECTIVE = {"fr": "15 octobre 2026", "en": "October 15, 2026"}
 
 # Identifiant Apple de Plan2Real (App Store Connect → Informations sur l'app → Identifiant Apple).
 # Tant qu'il est vide, les boutons affichent « Bientôt sur l'App Store ».
-APPSTORE_ID = None
+APPSTORE_ID = "6823348263"
 APPSTORE = {l: f"https://apps.apple.com/ca/app/id{APPSTORE_ID}?l={l}-CA" for l in ("fr", "en")} if APPSTORE_ID else None
 DEVELOPER = "https://apps.apple.com/ca/developer/id6796142518"
 
