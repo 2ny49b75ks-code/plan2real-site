@@ -99,7 +99,7 @@ HOME = {
              ("Clients résidentiels et commerciaux", "Comprenez enfin le plan : marchez dans la future cuisine, voyez si le corridor est assez large, placez vos meubles."),
              ("Designers et architectes", "Présentez une esquisse sur le site même, en quelques minutes, sans maquette ni modèle 3D.")],
         specs=[("Plateforme", "iOS 17+"), ("Appareil", "iPhone · LiDAR en bonus"), ("Langues", "FR / EN"), ("Données", "Sur l'iPhone")],
-        cta_h="Prêt à voir votre plan en vrai?", cta_p="Plan2Real arrive bientôt sur l'App Store, pour iPhone sous iOS 17 ou plus récent.",
+        cta_h="Prêt à voir votre plan en vrai?", cta_p="Plan2Real est sur l'App Store, pour iPhone sous iOS 17 ou plus récent.",
         cta_btn="Voir la page de téléchargement",
     ),
     "en": dict(
@@ -130,7 +130,7 @@ HOME = {
              ("Residential and commercial clients", "Finally understand the plan: walk through the future kitchen, see if the hallway is wide enough, place your furniture."),
              ("Designers and architects", "Present a sketch right on site, in minutes, with no mock-up or 3D model.")],
         specs=[("Platform", "iOS 17+"), ("Device", "iPhone · LiDAR a bonus"), ("Languages", "FR / EN"), ("Data", "On the iPhone")],
-        cta_h="Ready to see your plan for real?", cta_p="Plan2Real is coming soon to the App Store, for iPhone with iOS 17 or later.",
+        cta_h="Ready to see your plan for real?", cta_p="Plan2Real is on the App Store, for iPhone with iOS 17 or later.",
         cta_btn="See the download page",
     ),
 }
@@ -204,8 +204,8 @@ FEATURES = {
 
 DOWNLOAD = {
     "fr": dict(
-        title="Téléchargement — Plan2Real", desc="Plan2Real arrive bientôt sur l'App Store pour iPhone (iOS 17 ou plus récent).",
-        h1="Télécharger Plan2Real", intro="Plan2Real arrive bientôt sur l'App Store, pour iPhone.",
+        title="Téléchargement — Plan2Real", desc="Plan2Real est sur l'App Store pour iPhone (iOS 17 ou plus récent).",
+        h1="Télécharger Plan2Real", intro="Plan2Real est sur l'App Store, pour iPhone, à 4,99 $ (achat unique, sans abonnement).",
         status_h="Disponibilité", status="En préparation pour l'App Store. Cette page affichera le lien de téléchargement dès la sortie.",
         others="En attendant, découvrez les autres apps de JDG inc. sur l'App Store :", others_link="Voir les apps de JDG inc.",
         faq_h="Avant de télécharger",
@@ -219,8 +219,8 @@ DOWNLOAD = {
              ("Comment obtenir de l'aide ?", f'Écrivez-nous à <a href="mailto:{EMAIL}">{EMAIL}</a> ou consultez la page <a href="contact.html">Contact</a>.')],
     ),
     "en": dict(
-        title="Download — Plan2Real", desc="Plan2Real is coming soon to the App Store for iPhone (iOS 17 or later).",
-        h1="Download Plan2Real", intro="Plan2Real is coming soon to the App Store, for iPhone.",
+        title="Download — Plan2Real", desc="Plan2Real is on the App Store for iPhone (iOS 17 or later).",
+        h1="Download Plan2Real", intro="Plan2Real is on the App Store for iPhone: one-time purchase, no subscription.",
         status_h="Availability", status="Being prepared for the App Store. This page will show the download link as soon as it's out.",
         others="In the meantime, discover the other JDG inc. apps on the App Store:", others_link="See JDG inc. apps",
         faq_h="Before you download",
